@@ -1,0 +1,15 @@
+<svg width="900" height="1200" viewBox="0 0 900 1200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="g3" x1="0" y1="0" x2="900" y2="1200" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#fdf7ed"/>
+      <stop offset="1" stop-color="#b8914c"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="1200" fill="url(#g3)"/>
+  <rect x="80" y="80" width="740" height="1040" stroke="#123155" stroke-opacity="0.8" stroke-width="2"/>
+  <circle cx="450" cy="440" r="200" fill="rgba(18,49,85,0.08)"/>
+  <path d="M300 840C345 670 400 620 450 620C500 620 555 670 600 840" stroke="#123155" stroke-width="8" stroke-linecap="round"/>
+  <path d="M345 535C345 470 390 420 450 420C510 420 555 470 555 535V575H345V535Z" fill="rgba(18,49,85,0.08)"/>
+  <text x="450" y="910" text-anchor="middle" fill="#123155" font-family="Georgia, serif" font-size="90" letter-spacing="4">WITH</text>
+  <text x="450" y="998" text-anchor="middle" fill="#123155" font-family="Georgia, serif" font-size="72" letter-spacing="8">GRACE</text>
+</svg>

@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nikitha & Naidu | Wedding Invitation</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<audio id="bgm" loop preload="auto">
+  <source src="assets/Perfect%20(slowed).mp3" type="audio/mpeg">
+</audio>
+
+<div id="entryScreen">
+  <canvas id="ringCanvas" aria-hidden="true"></canvas>
+  <div class="entry-content">
+    <p class="save-text">OUR STORY IS ABOUT TO BEGIN</p>
+    <button id="openInvitation"><span class="music-note" aria-hidden="true">♫</span> TAP TO ENTER WITH MUSIC</button>
+  </div>
+</div>
+
+<main id="invitation">
+
+<header class="topbar">
+  <div class="brand">N<span>&</span>N</div>
+  <nav class="nav">
+    <a href="#story">Story</a>
+    <a href="#events">Events</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#venue">Venue</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-copy">
+    <p class="hero-small">TOGETHER WITH THEIR FAMILIES</p>
+    <div class="cross hero-cross">✝</div>
+    <h2>Nikitha <span>&</span><br>Naidu</h2>
+    <div class="names-script">Nikitha • Naidu</div>
+    <div class="gold-divider hero-divider"></div>
+    <p class="love-note">A love written by God.<br>A forever chosen by two hearts.</p>
+    <div class="quote-box">
+      <p>“Therefore what God has joined together,<br>let no one separate.”</p>
+      <span>MARK 10:9</span>
+    </div>
+    <div class="date-row">
+      <span>04</span>
+      <span>11</span>
+      <span>2026</span>
+      <span>06:00 PM</span>
+    </div>
+    <button class="enter-btn">ENTER OUR STORY</button>
+  </div>
+
+  <div class="hero-visual">
+    <img class="ring-image" src="assets/hero-collage.jpe" alt="Nikitha and Naidu wedding collage, with hands and wedding rings">
+  </div>
+</section>
+
+<section id="story" class="section">
+  <p class="section-label">A PROMISE</p>
+  <h2>Do Everything In <br class="mobile-only-break">Love</h2>
+  <div class="story-text">“Do everything in love.”<br><br><em>1 Corinthians 16:14</em></div>
+</section>
+
+<section class="section countdown-section">
+  <p class="section-label">COUNTDOWN</p>
+  <h2>Until Our Day</h2>
+  <div class="countdown" id="countdown">
+    <div class="time-box">
+      <span id="days">00</span>
+      <label>Days</label>
+    </div>
+    <div class="time-box">
+      <span id="hours">00</span>
+      <label>Hours</label>
+    </div>
+    <div class="time-box">
+      <span id="minutes">00</span>
+      <label>Minutes</label>
+    </div>
+    <div class="time-box">
+      <span id="seconds">00</span>
+      <label>Seconds</label>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <p class="section-label">OUR STORY</p>
+  <h2>Two Hearts.<br>One Promise.</h2>
+  <div class="story-text">
+    By God's grace, two lives have come together and continue to grow in love, faith, and understanding.
+    In one another, Nikitha and Naidu have found a companion with whom to share life's joys, meet its challenges, and choose each other with patience and care.
+    Their love is grounded in faith and strengthened by the blessings and support of their families.
+    With grateful hearts, they look toward marriage as a sacred commitment: to walk side by side, grow together in God's love, and begin a new chapter built on devotion, kindness, and trust.
+    <br><br><em>“With faith in our hearts,<br>we begin this beautiful journey together.”</em>
+  </div>
+</section>
+
+<section id="family-blessings" class="family-blessings" aria-labelledby="familyTitle">
+  <div class="family-mobile-portraits" aria-hidden="true">
+    <img src="assets/family-blessings-portrait.png" alt="">
+    <img src="assets/family-blessings-portrait.png" alt="">
+  </div>
+  <div class="family-content">
+    <header class="family-intro">
+      <span class="family-cross family-reveal" aria-hidden="true">✝</span>
+      <p class="family-eyebrow family-reveal">WITH THE BLESSINGS OF OUR FAMILIES</p>
+      <h2 id="familyTitle" class="family-reveal">Two Families.<br>One Beautiful Beginning.</h2>
+      <p class="family-intro-copy family-reveal">With grateful hearts, we begin this new chapter surrounded by the love, prayers and blessings of our families.</p>
+    </header>
+
+    <div class="family-parents">
+      <article class="family-person family-reveal">
+        <p class="family-role">THE BRIDE</p>
+        <h3>NIKITHA NIRMALA</h3>
+        <p class="family-relation">Daughter of</p>
+        <p class="family-parent-name">Mr. Durga Prasad <span>(Late)</span></p>
+        <span class="family-and" aria-hidden="true">&</span>
+        <p class="family-parent-name">Mrs. Rajamani</p>
+      </article>
+
+      <span class="family-divider-cross family-reveal" aria-hidden="true">✝</span>
+
+      <article class="family-person family-reveal">
+        <p class="family-role">THE GROOM</p>
+        <h3>K. NAIDU</h3>
+        <p class="family-relation">Son of</p>
+        <p class="family-parent-name">Mr. Polamarasetty Kiriti <span>(Late)</span></p>
+        <span class="family-and" aria-hidden="true">&</span>
+        <p class="family-parent-name">Mrs. Jaya</p>
+      </article>
+    </div>
+
+    <div class="family-elders family-reveal">
+      <p class="family-role">WITH THE BLESSINGS OF</p>
+      <p class="family-elder-name">Sri Polamarasetty Sebastian</p>
+      <span class="family-and" aria-hidden="true">&</span>
+      <p class="family-elder-name">Smt. Jayaratnam <span>(Late)</span></p>
+    </div>
+
+    <blockquote class="family-verse family-reveal">
+      <p>“Do everything in love.”</p>
+      <cite>1 Corinthians 16:14</cite>
+    </blockquote>
+
+    <div class="family-details family-reveal">
+      <p class="family-date">16 OCTOBER 2026</p>
+      <p class="family-time">FRIDAY · 10:30 AM</p>
+      <p class="family-church">CHRIST THE KING<br>CATHOLIC CHURCH</p>
+      <p class="family-address">Mangalapalem, Kothavalasa<br>Vizianagaram, Andhra Pradesh</p>
+      <p class="family-lunch">LUNCH FOLLOWS AT THE MARRIAGE VENUE</p>
+    </div>
+  </div>
+</section>
+
+<section id="events" class="section">
+  <p class="section-label">JOIN US</p>
+  <h2>Wedding Day</h2>
+  <div class="events">
+    <div class="event-card">
+      <h3>Wedding Ceremony</h3>
+      <p>Friday, 16 October 2026<br>10:30 AM<br><br>
+      Christ the King Catholic Church<br>
+      Mangalapalem, Kothavalasa<br>Vizianagaram</p>
+    </div>
+    <div class="event-card">
+      <h3>Lunch</h3>
+      <p>Following the ceremony<br><br>At the Marriage Venue</p>
+    </div>
+  </div>
+</section>
+
+<section id="venue" class="venue-hero-section" aria-label="Wedding venue">
+
+    <div class="venue-hero-background">
+        <img
+            src="assets/church-venue.png"
+            alt="Christ the King Catholic Church at sunset"
+        >
+    </div>
+
+    <div class="venue-hero-overlay"></div>
+
+    <div class="venue-hero-content">
+
+        <div class="venue-hero-heading">
+
+            <p class="venue-hero-eyebrow">
+                THE CEREMONY
+            </p>
+
+            <div class="venue-hero-cross">
+                ✝
+            </div>
+
+            <h2>
+                Wedding<br>
+                Ceremony
+            </h2>
+
+            <div class="venue-hero-date">
+                Friday, 16 October 2026
+            </div>
+
+            <div class="venue-hero-time">
+                10:30 AM
+            </div>
+
+        </div>
+
+
+        <div class="venue-location-card">
+
+            <div class="venue-location-icon">
+                ♧
+            </div>
+
+            <p class="venue-location-title">
+                CHRIST THE KING
+            </p>
+
+            <p class="venue-location-subtitle">
+                CATHOLIC CHURCH
+            </p>
+
+            <div class="venue-location-line"></div>
+
+            <p class="venue-location-address">
+                Mangalapalem, Kothavalasa<br>
+                Vizianagaram, Andhra Pradesh
+            </p>
+
+            <a
+                class="venue-location-button"
+                href="https://share.google/tFbgaW2Ao6kE08GcS"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                VIEW LOCATION
+                <span>→</span>
+            </a>
+
+        </div>
+
+
+        <div class="venue-lunch">
+
+            <div class="venue-lunch-icon">
+                🍴
+            </div>
+
+            <div>
+                <p> LUNCH FOLLOWS </p>
+                <span>At the Marriage Venue</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section id="gallery" class="section">
+  <p class="section-label">MEMORIES</p>
+  <h2>Our Gallery</h2>
+  <div class="gallery">
+    <figure class="gallery-story gallery-story--promise placement-bottom-left">
+      <img src="assets/gallery-photo-04.jpg" alt="Nikitha in a bridal portrait with a smaller inset wedding portrait">
+      <figcaption class="gallery-caption">
+        <span class="gallery-number">01</span>
+        <h3>A Promise</h3>
+        <p>Two hands, choosing to walk through life together.</p>
+      </figcaption>
+    </figure>
+    <figure class="gallery-story gallery-story--chairs placement-top-right">
+      <img src="assets/gallery-photo-01.jpg" alt="Two portraits of Nikitha in her wedding attire">
+      <figcaption class="gallery-caption">
+        <span class="gallery-number">02</span>
+        <h3>Made for This Day</h3>
+        <p>Two places waiting for the beginning of one beautiful journey.</p>
+      </figcaption>
+    </figure>
+    <figure class="gallery-story gallery-story--bride placement-bottom-center">
+      <img src="assets/gallery-photo-02.jpg" alt="Nikitha and Naidu together in their wedding attire">
+      <figcaption class="gallery-caption">
+        <span class="gallery-number">03</span>
+        <h3>A Beautiful Beginning</h3>
+        <p>Grace, beauty and a heart ready for a new chapter.</p>
+      </figcaption>
+    </figure>
+    <figure class="gallery-story gallery-story--celebration placement-center-left">
+      <img src="assets/gallery-photo-03.jpg" alt="Naidu in a portrait wearing his wedding attire">
+      <figcaption class="gallery-caption">
+        <span class="gallery-number">04</span>
+        <h3>A Moment to Remember</h3>
+        <p>Surrounded by love, they begin a journey written with grace.</p>
+      </figcaption>
+    </figure>
+    <figure class="gallery-story gallery-story--flowers placement-bottom-right">
+      <img src="assets/gallery-photo-06.jpg" alt="Nikitha and Naidu seated together at their wedding stage">
+      <figcaption class="gallery-caption">
+        <span class="gallery-number">05</span>
+        <h3>Blooming with Love</h3>
+        <p>Like flowers in spring, their story begins to bloom.</p>
+      </figcaption>
+    </figure>
+    <figure class="gallery-story gallery-story--joy placement-top-left">
+      <img src="assets/gallery-photo-05.png" alt="An intimate silhouette of Nikitha and Naidu together">
+      <figcaption class="gallery-caption">
+        <span class="gallery-number">06</span>
+        <h3>The Joy Around Us</h3>
+        <p>A little joy, a sweet reminder to cherish every gift along the way.</p>
+      </figcaption>
+    </figure>
+  </div>
+</section>
+
+<section id="closing" class="closing-section" aria-labelledby="closingTitle">
+  <div class="closing-content">
+    <div class="closing-cross closing-reveal" aria-hidden="true">✝</div>
+    <p class="closing-eyebrow closing-reveal">WITH LOVE & GRATITUDE</p>
+    <h2 id="closingTitle" class="closing-title closing-reveal">Your presence<br>is our <em>blessing.</em></h2>
+    <p class="closing-message closing-reveal">Your presence, prayers and blessings will make our celebration even more special.</p>
+    <div class="closing-signature closing-reveal">
+      <p>NIKITHA & NAIDU</p>
+      <span>16 OCTOBER 2026</span>
+      <span class="closing-signature-cross" aria-hidden="true">✝</span>
+    </div>
+  </div>
+
+  <footer class="closing-footer closing-reveal">
+    <address class="site-credit closing-footer-credit">
+      <span>Website designed by</span>
+      <strong>Venkatesh Kandipilli</strong>
+      <a href="mailto:venkateshjaykar99@gmail.com">venkateshjaykar99@gmail.com</a>
+      <a href="tel:+91998597312">+91 9985976312</a>
+    </address>
+    <div class="closing-footer-love">
+      <span>MADE WITH LOVE</span>
+      <strong>N & N</strong>
+    </div>
+    <div class="closing-footer-event">
+      <span>OUR WEDDING</span>
+      <strong>16 OCTOBER 2026</strong>
+    </div>
+  </footer>
+</section>
+
+</main>
+<button class="music-toggle music-toggle-bottom" id="mainMusicToggle" aria-label="Toggle song" hidden>♫ Song</button>
+<script src="script.js"></script>
+<script src="assets/three.min.js"></script>
+<script src="ring-scene.js"></script>
+</body>
+</html>
