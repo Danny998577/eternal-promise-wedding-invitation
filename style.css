@@ -98,7 +98,10 @@ button{font:inherit}
 .gallery-caption p{max-width:29ch;margin:0;color:rgba(255,253,248,.9);font-family:'Cormorant Garamond',serif;font-size:clamp(17px,1.35vw,20px);line-height:1.4}
 .placement-bottom-left .gallery-caption{bottom:32px;left:32px;align-items:flex-start}
 .placement-top-right::after{background:linear-gradient(180deg,rgba(4,12,24,.74) 0%,rgba(4,12,24,.34) 34%,transparent 70%)}
-.placement-top-right .gallery-caption{top:28px;right:28px;align-items:flex-end;text-align:right}
+.placement-top-right .gallery-caption{top:32px;right:auto;left:32px;align-items:flex-start;text-align:left}
+.gallery-story--chairs .gallery-caption{top:34px;left:34px;right:auto;bottom:auto;align-items:flex-start;text-align:left;max-width:min(54%,28rem)}
+.gallery-story--chairs .gallery-caption h3,
+.gallery-story--chairs .gallery-caption p{position:static;left:auto;top:auto;max-width:none;text-align:left;align-items:flex-start}
 .placement-bottom-center .gallery-caption{bottom:28px;left:50%;align-items:center;text-align:center;transform:translateX(-50%)}
 .placement-center-left::after{background:linear-gradient(90deg,rgba(4,12,24,.76) 0%,rgba(4,12,24,.35) 40%,transparent 76%)}
 .placement-center-left .gallery-caption{top:50%;left:30px;align-items:flex-start;transform:translateY(-50%)}
