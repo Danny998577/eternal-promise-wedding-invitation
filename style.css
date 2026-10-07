@@ -40,14 +40,20 @@ button{font:inherit}
 .hero::before,.hero::after{position:absolute;inset:0;z-index:-1;content:"";pointer-events:none}
 .hero::before{background:url("assets/hero-background.jpe") center 48%/cover no-repeat}
 .hero::after{background:linear-gradient(90deg,rgba(248,245,237,.88) 0%,rgba(248,245,237,.78) 30%,rgba(248,245,237,.36) 52%,rgba(248,245,237,.04) 78%),linear-gradient(0deg,rgba(248,245,237,.25),transparent 36%,rgba(248,245,237,.08))}
+.hero-floral-frame{display:none}
 .hero-copy,.hero-visual{position:relative;z-index:1}
 .hero-copy{width:min(100%,460px);padding:0;color:#17243d}
 .hero-small{font-size:10px;letter-spacing:.32em;color:#a17d39;text-transform:uppercase;margin-bottom:18px}
 .hero-cross{margin:0 0 12px 0;font-size:23px;color:#b18a3d}
-.hero-copy h2{font-family:'Cormorant Garamond',serif;font-weight:400;font-size:clamp(4.6rem,7.4vw,7.3rem);line-height:.83;letter-spacing:-0.045em;color:#17243d;margin:0}
+.hero-blessing-label{position:relative;width:min(100%,340px);margin:0 auto 8px;color:#a17d39;font-size:8px;letter-spacing:.3em;text-align:center}
+.hero-blessing-label::before{position:absolute;right:10%;bottom:calc(100% + 10px);left:10%;height:1px;background:linear-gradient(90deg,transparent,rgba(177,138,61,.55) 20%,rgba(177,138,61,.55) 80%,transparent);content:""}
+.hero-copy h2{font-family:'Cormorant Garamond',serif;font-weight:400;font-size:clamp(3rem,5.2vw,4rem);line-height:.94;letter-spacing:-0.055em;color:#17243d;margin:0;text-align:center;white-space:nowrap}
 .hero-copy h2 span{font-style:italic;color:#b18a3d}
-.names-script{margin-top:16px;font-family:'Cormorant Garamond',serif;font-size:clamp(1.7rem,2.4vw,2.35rem);font-style:italic;color:#374052;letter-spacing:.02em}
-.hero-divider{margin:20px 0 14px 0;background:#c6a45e}
+.hero-name-roles{display:flex;justify-content:space-evenly;align-items:center;width:76%;margin:10px auto 0;color:#a17d39;font-size:7px;letter-spacing:.28em}
+.names-script{margin-top:20px;font-family:'Cormorant Garamond',serif;font-size:clamp(1.15rem,1.65vw,1.45rem);font-style:normal;color:#a17d39;letter-spacing:.34em;text-align:center}
+.names-script span{padding:0 .4em;color:#c6a45e}
+.hero-divider{position:relative;margin:20px 0 14px 0;background:linear-gradient(90deg,transparent,#c6a45e 18%,#c6a45e 82%,transparent)}
+.hero-divider::after{position:absolute;top:50%;left:50%;padding:0 8px;background:#f8f5ed;color:#b18a3d;content:"+";font-size:12px;line-height:1;transform:translate(-50%,-50%)}
 .love-note{font-size:18px;line-height:1.5;color:#374052;font-family:'Cormorant Garamond',serif;font-style:italic}
 .date-row{display:flex;flex-wrap:wrap;gap:18px;align-items:center;margin:20px 0 24px;color:#17243d;font-family:'Cormorant Garamond',serif;font-size:1.15rem;letter-spacing:.12em}
 .date-row span{display:inline-block;opacity:.9}
@@ -141,10 +147,11 @@ button{font:inherit}
 :root{--mobile-gutter:24px;--mobile-section-space:68px}
 @media (max-width:900px){
   .hero{grid-template-columns:minmax(0,1fr);align-content:start;gap:28px;min-height:100svh;padding:calc(68.55vw + 34px) clamp(24px,7vw,64px) 48px}
+  .hero-floral-frame{position:absolute;top:0;right:0;left:0;z-index:0;display:block;height:calc(68.55vw + 28px);background:url("assets/hero-floral-frame.svg") center/100% 100% no-repeat;pointer-events:none}
   .hero::before{background-size:100% auto;background-position:top center}
   .hero::after{background:linear-gradient(180deg,transparent 0,rgba(248,245,237,.04) 42vw,rgba(248,245,237,.55) 58vw,#f8f5ed calc(68.55vw + 28px))}
   .hero-copy{width:min(100%,520px)}
-  .hero-copy h2{font-size:clamp(4.1rem,10vw,6.4rem)}
+  .hero-copy h2{font-size:clamp(3rem,5.2vw,4rem)}
   .hero-visual{width:min(100%,620px);justify-self:center}
 }
 @media (max-width:768px){
@@ -156,7 +163,10 @@ button{font:inherit}
   .nav a{font-size:10px;letter-spacing:2px}
   .hero{gap:26px;min-height:100svh;padding-inline:var(--mobile-gutter)}
   .hero-copy{width:100%;max-width:520px;padding:0;text-align:left}
-  .hero-copy h2{font-size:clamp(3.8rem,10vw,5.4rem);line-height:.87;letter-spacing:-.04em}
+  .hero-copy h2{font-size:clamp(2.5rem,9.5vw,3.6rem);line-height:.94;letter-spacing:-.055em}
+  .hero-blessing-label{font-size:7px;letter-spacing:.22em}
+  .hero-name-roles{width:84%;font-size:6px}
+  .names-script{font-size:clamp(.95rem,4vw,1.1rem);letter-spacing:.12em;white-space:nowrap}
   .date-row{justify-content:flex-start}
   .hero-visual{width:100%;min-height:0;flex-direction:column;gap:0}
   .ring-image{width:min(100%,620px);max-width:100%;height:auto;aspect-ratio:798/613;object-fit:contain}
@@ -187,12 +197,12 @@ button{font:inherit}
   :root{--mobile-gutter:20px;--mobile-section-space:60px}
   .hero{gap:24px;padding-top:calc(68.55vw + 26px);padding-bottom:44px}
   .hero-small{font-size:10px;letter-spacing:3px;line-height:1.6}
-  .hero-copy h2{font-size:clamp(3.4rem,12vw,4.2rem);line-height:.88}
+  .hero-copy h2{font-size:clamp(2.25rem,9vw,3rem);line-height:.94}
   .hero-copy h2 br{display:initial}
   .hero-copy h2 span{display:inline;margin:0;font-size:inherit;line-height:inherit}
   .mobile-only-break{display:block}
   .hero-cross{margin-bottom:8px}
-  .names-script{font-size:clamp(1.65rem,7vw,2rem)}
+  .names-script{font-size:clamp(.95rem,4vw,1.1rem);letter-spacing:.12em;white-space:nowrap}
   .hero-divider{margin:18px 0 14px}
   .love-note{font-size:17px;line-height:1.65}
   .date-row{gap:10px 16px;margin:18px 0 20px;font-size:1.25rem}
@@ -222,7 +232,7 @@ button{font:inherit}
   :root{--mobile-gutter:18px;--mobile-section-space:54px}
   .topbar{padding-inline:var(--mobile-gutter)}
   .hero{padding-inline:var(--mobile-gutter)}
-  .hero-copy h2{font-size:clamp(3rem,14vw,3.3rem)}
+  .hero-copy h2{font-size:clamp(2rem,8.8vw,2.5rem)}
   .hero-small{letter-spacing:2.4px}
   .date-row{gap:8px 12px;font-size:1.15rem}
   .enter-btn{max-width:100%;padding:12px 14px;letter-spacing:2px}
@@ -292,9 +302,10 @@ button{font:inherit}
 .family-blessings{position:relative;isolation:isolate;display:grid;place-items:center;width:100%;min-height:100vh;min-height:100svh;padding:44px clamp(24px,6vw,84px);overflow:hidden;background:#f8f5ed;color:#10203c;text-align:center}
 .family-mobile-portraits{display:none}
 .family-blessings::before,.family-blessings::after{position:absolute;inset:0;content:"";pointer-events:none}
-.family-blessings::before{z-index:-2;background-image:url("assets/family-blessings-portrait.png");background-size:100% 100%;background-position:center center;background-repeat:no-repeat;opacity:0;transform:translate3d(0,var(--family-parallax,0px),0);transition:opacity 1400ms cubic-bezier(.2,.65,.25,1),transform 1800ms cubic-bezier(.2,.65,.25,1)}
+.family-blessings::before{z-index:-2;background-image:none;background-size:100% 100%;background-position:center center;background-repeat:no-repeat;opacity:0;transform:translate3d(0,var(--family-parallax,0px),0);transition:opacity 1400ms cubic-bezier(.2,.65,.25,1),transform 1800ms cubic-bezier(.2,.65,.25,1)}
 .family-blessings::after{z-index:-1;background:linear-gradient(90deg,rgba(250,247,239,.08) 0%,rgba(250,247,239,.28) 25%,rgba(250,247,239,.52) 50%,rgba(250,247,239,.28) 75%,rgba(250,247,239,.08) 100%),linear-gradient(180deg,rgba(250,247,239,.04),rgba(250,247,239,.15))}
 .family-blessings.is-visible::before{opacity:1;transform:translate3d(0,var(--family-parallax,0px),0) scale(1)}
+.family-floral-frame{position:absolute;inset:0;z-index:0;background:url("assets/family-floral-frame.svg") center/100% 100% no-repeat;pointer-events:none}
 .family-content{position:relative;z-index:1;display:grid;justify-items:center;gap:14px;width:min(100%,1020px);margin:auto}
 .family-intro{width:min(100%,700px)}
 .family-cross{display:block;margin-bottom:14px;color:#b18a3d;font-family:'Cormorant Garamond',serif;font-size:19px;line-height:1}
@@ -347,8 +358,9 @@ button{font:inherit}
 @media (max-width:768px){
   .family-blessings{min-height:100svh;align-items:start;padding:0 var(--mobile-gutter) 70px}
   .family-blessings::before{background-image:none}
+  .family-floral-frame{background-image:url("assets/family-floral-frame-mobile.svg")}
   .family-mobile-portraits{position:relative;grid-column:1;display:grid;grid-template-columns:1fr;width:calc(100% + 2 * var(--mobile-gutter));aspect-ratio:16 / 9;margin:0 calc(-1 * var(--mobile-gutter));overflow:hidden}
-  .family-mobile-portraits img{width:100%;height:100%;object-fit:contain}
+  .family-mobile-portraits img{width:100%;height:100%;object-fit:contain;visibility:hidden}
   .family-mobile-portraits img:last-child{display:none}
   .family-content{margin:26px auto 0}
   .family-blessings::after{background:linear-gradient(180deg,rgba(250,247,239,.4) 0%,rgba(250,247,239,.52) 38%,rgba(250,247,239,.62) 72%,rgba(250,247,239,.48) 100%)}
