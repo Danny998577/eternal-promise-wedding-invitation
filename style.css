@@ -148,6 +148,9 @@ button{font:inherit}
   .hero-visual{width:min(100%,620px);justify-self:center}
 }
 @media (max-width:768px){
+  .entry-content{bottom:calc(50% - 15vw - 66px)}
+  .save-text{margin-bottom:7px;font-size:clamp(12px,3.3vw,13px);font-weight:500;letter-spacing:3px}
+  #openInvitation{font-size:11px;letter-spacing:1.5px;white-space:nowrap}
   .topbar{min-height:68px;padding:0 var(--mobile-gutter)}
   .nav{gap:14px}
   .nav a{font-size:10px;letter-spacing:2px}
