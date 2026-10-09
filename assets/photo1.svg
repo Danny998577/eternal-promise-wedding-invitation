@@ -1,0 +1,15 @@
+<svg width="900" height="1200" viewBox="0 0 900 1200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="g1" x1="0" y1="0" x2="900" y2="1200" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#fbf2dc"/>
+      <stop offset="1" stop-color="#d7b36d"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="1200" fill="url(#g1)"/>
+  <rect x="80" y="80" width="740" height="1040" stroke="#fff" stroke-opacity="0.7" stroke-width="2"/>
+  <circle cx="450" cy="420" r="220" fill="rgba(255,255,255,0.15)"/>
+  <path d="M260 840C300 660 390 590 450 590C510 590 600 660 640 840" stroke="#fff" stroke-opacity="0.5" stroke-width="8"/>
+  <path d="M330 500C330 430 386 370 450 370C514 370 570 430 570 500V560H330V500Z" fill="rgba(255,255,255,0.12)"/>
+  <text x="450" y="915" text-anchor="middle" fill="#0C1E38" font-family="Georgia, serif" font-size="90" letter-spacing="5">OUR</text>
+  <text x="450" y="1005" text-anchor="middle" fill="#0C1E38" font-family="Georgia, serif" font-size="72" letter-spacing="8">LOVE</text>
+</svg>

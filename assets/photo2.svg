@@ -1,0 +1,15 @@
+<svg width="900" height="1200" viewBox="0 0 900 1200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="g2" x1="0" y1="0" x2="900" y2="1200" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0f1f39"/>
+      <stop offset="1" stop-color="#d2a95a"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="1200" fill="url(#g2)"/>
+  <rect x="80" y="80" width="740" height="1040" stroke="#F5E3AA" stroke-opacity="0.8" stroke-width="2"/>
+  <circle cx="450" cy="410" r="220" fill="rgba(255,255,255,0.08)"/>
+  <path d="M300 830C345 660 400 610 450 610C500 610 555 660 600 830" stroke="#F5E3AA" stroke-width="8" stroke-linecap="round"/>
+  <path d="M340 520C340 455 390 400 450 400C510 400 560 455 560 520V570H340V520Z" fill="rgba(245,227,170,0.15)"/>
+  <text x="450" y="910" text-anchor="middle" fill="#F5E3AA" font-family="Georgia, serif" font-size="84" letter-spacing="6">FOREVER</text>
+  <text x="450" y="995" text-anchor="middle" fill="#F5E3AA" font-family="Georgia, serif" font-size="66" letter-spacing="10">TOGETHER</text>
+</svg>

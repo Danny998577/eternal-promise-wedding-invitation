@@ -1,0 +1,26 @@
+<svg width="1600" height="1200" viewBox="0 0 1600 1200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="1200" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#081A32"/>
+      <stop offset="1" stop-color="#1B2E46"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#F7E7B7"/>
+      <stop offset="1" stop-color="#C9A65D"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="1200" fill="url(#bg)"/>
+  <circle cx="800" cy="600" r="520" fill="rgba(255,255,255,0.04)"/>
+  <circle cx="800" cy="600" r="430" stroke="url(#gold)" stroke-opacity="0.5" stroke-width="2"/>
+  <circle cx="800" cy="600" r="350" stroke="url(#gold)" stroke-opacity="0.3" stroke-width="1.5"/>
+  <path d="M270 250C450 140 610 130 800 250C990 130 1150 140 1330 250" stroke="url(#gold)" stroke-width="2" opacity="0.7"/>
+  <path d="M270 950C450 1060 610 1070 800 950C990 1070 1150 1060 1330 950" stroke="url(#gold)" stroke-width="2" opacity="0.7"/>
+  <rect x="620" y="260" width="360" height="360" rx="180" fill="rgba(247,231,183,0.07)" stroke="url(#gold)" stroke-width="2"/>
+  <path d="M700 620C700 615 703 610 708 610H892C897 610 900 615 900 620V670C900 690 883 706 863 706H737C717 706 700 690 700 670V620Z" fill="rgba(247,231,183,0.1)" stroke="url(#gold)" stroke-width="2"/>
+  <path d="M730 530C730 478 770 440 823 440C876 440 916 478 916 530V620H730V530Z" fill="rgba(247,231,183,0.12)" stroke="url(#gold)" stroke-width="2"/>
+  <path d="M740 505C740 461 776 426 820 426C864 426 900 461 900 505" stroke="url(#gold)" stroke-width="2" opacity="0.8"/>
+  <text x="800" y="835" text-anchor="middle" fill="#F6E7C2" font-family="Georgia, serif" font-size="110" font-weight="500" letter-spacing="4">Nikitha</text>
+  <text x="800" y="920" text-anchor="middle" fill="#C9A65D" font-family="Georgia, serif" font-size="90" font-weight="500" letter-spacing="6">&amp;</text>
+  <text x="800" y="995" text-anchor="middle" fill="#F6E7C2" font-family="Georgia, serif" font-size="110" font-weight="500" letter-spacing="4">Naidu</text>
+  <text x="800" y="1065" text-anchor="middle" fill="#EADFB9" font-family="Arial, sans-serif" font-size="28" letter-spacing="8">16 OCTOBER 2026</text>
+</svg>

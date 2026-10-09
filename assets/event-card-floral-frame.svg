@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 500" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <linearGradient id="petal" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#fffefa"/>
+      <stop offset=".7" stop-color="#f6eee0"/>
+      <stop offset="1" stop-color="#e5d4b3"/>
+    </linearGradient>
+    <g id="leaf">
+      <path d="M0 0C9-16 26-18 40-13 34 1 17 7 0 0Z" fill="#89977d" stroke="#f7f0e4" stroke-width="1"/>
+      <path d="M2 0 36-12" fill="none" stroke="#e9e0ce" stroke-width=".8"/>
+    </g>
+    <g id="flower">
+      <g fill="url(#petal)" stroke="#ddceb3" stroke-width="1">
+        <ellipse cy="-13" rx="6" ry="12"/>
+        <ellipse cy="-13" rx="6" ry="12" transform="rotate(45)"/>
+        <ellipse cy="-13" rx="6" ry="12" transform="rotate(90)"/>
+        <ellipse cy="-13" rx="6" ry="12" transform="rotate(135)"/>
+        <ellipse cy="-13" rx="6" ry="12" transform="rotate(180)"/>
+        <ellipse cy="-13" rx="6" ry="12" transform="rotate(225)"/>
+        <ellipse cy="-13" rx="6" ry="12" transform="rotate(270)"/>
+        <ellipse cy="-13" rx="6" ry="12" transform="rotate(315)"/>
+      </g>
+      <circle r="6" fill="#c5a36a"/>
+      <circle r="2.5" fill="#f8e9c9"/>
+    </g>
+    <g id="corner">
+      <path d="M-12 168C18 128 20 91 44 61S79 25 112 4M2 137C25 124 36 104 42 82M18 98C2 86-2 72 2 58M49 57C70 48 83 29 86 13" fill="none" stroke="#b59a67" stroke-linecap="round" stroke-width="1.5"/>
+      <use href="#leaf" transform="translate(0 136) rotate(-24) scale(.8)"/>
+      <use href="#leaf" transform="translate(-5 91) rotate(205) scale(.72)"/>
+      <use href="#leaf" transform="translate(28 105) rotate(-20) scale(.78)"/>
+      <use href="#leaf" transform="translate(17 63) rotate(205) scale(.68)"/>
+      <use href="#leaf" transform="translate(53 59) rotate(-18) scale(.72)"/>
+      <use href="#flower" transform="translate(1 97) scale(1.05)"/>
+      <use href="#flower" transform="translate(45 59) scale(.95)"/>
+      <use href="#flower" transform="translate(84 20) scale(.82)"/>
+      <use href="#flower" transform="translate(25 150) scale(.72)"/>
+      <circle cx="14" cy="46" r="3" fill="#fffdf7" stroke="#c8a66b"/>
+      <circle cx="69" cy="97" r="3" fill="#fffdf7" stroke="#c8a66b"/>
+    </g>
+  </defs>
+  <g opacity=".95">
+    <use href="#corner"/>
+    <use href="#corner" transform="translate(600 0) scale(-1 1)"/>
+    <use href="#corner" transform="translate(0 500) scale(1 -1)"/>
+    <use href="#corner" transform="translate(600 500) scale(-1 -1)"/>
+    <path d="M8 188C16 205 17 220 12 237M592 188C584 205 583 220 588 237M8 263C16 280 17 295 12 312M592 263C584 280 583 295 588 312" fill="none" stroke="#b59a67" stroke-opacity=".65" stroke-width="1.2"/>
+    <use href="#leaf" transform="translate(5 210) rotate(-75) scale(.52)"/>
+    <use href="#leaf" transform="translate(5 285) rotate(-75) scale(.52)"/>
+    <use href="#leaf" transform="translate(595 210) rotate(105) scale(.52)"/>
+    <use href="#leaf" transform="translate(595 285) rotate(105) scale(.52)"/>
+  </g>
+</svg>

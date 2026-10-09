@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 1400">
+  <defs>
+    <linearGradient id="petal" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#fffefa"/>
+      <stop offset=".62" stop-color="#f8f1e5"/>
+      <stop offset="1" stop-color="#e9dcc5"/>
+    </linearGradient>
+    <linearGradient id="leaf" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#a7b39a"/>
+      <stop offset="1" stop-color="#60795f"/>
+    </linearGradient>
+    <g id="leaf-shape">
+      <path d="M1 15C6 3 19 0 31 2 26 14 14 21 1 15Z" fill="url(#leaf)" stroke="#f2ead8" stroke-width="1"/>
+      <path d="M3 15 28 3" fill="none" stroke="#e9e1ce" stroke-width=".8"/>
+    </g>
+    <g id="flower">
+      <g fill="url(#petal)" stroke="#ddceb3" stroke-width=".9">
+        <ellipse cy="-12" rx="6.5" ry="12"/>
+        <ellipse cy="-12" rx="6.5" ry="12" transform="rotate(45)"/>
+        <ellipse cy="-12" rx="6.5" ry="12" transform="rotate(90)"/>
+        <ellipse cy="-12" rx="6.5" ry="12" transform="rotate(135)"/>
+        <ellipse cy="-12" rx="6.5" ry="12" transform="rotate(180)"/>
+        <ellipse cy="-12" rx="6.5" ry="12" transform="rotate(225)"/>
+        <ellipse cy="-12" rx="6.5" ry="12" transform="rotate(270)"/>
+        <ellipse cy="-12" rx="6.5" ry="12" transform="rotate(315)"/>
+      </g>
+      <circle r="6" fill="#c7a46a"/>
+      <circle r="2.8" fill="#f5e7c7"/>
+    </g>
+    <g id="rose">
+      <circle r="19" fill="url(#petal)" stroke="#ddceb3" stroke-width="1"/>
+      <path d="M-13-5C-7-16 7-15 13-6 19 2 10 13 2 12-6 12-14 7-14 1-14-4-9-8-5-8 1-9 6-5 7-1 8 4 2 8-2 6-6 4-5 1-1 0 2 0 4 2 2 4" fill="none" stroke="#d4bd95" stroke-width="1.6" stroke-linecap="round"/>
+      <circle r="2.4" fill="#d9bf8e"/>
+    </g>
+    <g id="spray">
+      <path d="M2 10C23 38 18 69 5 99S2 157 19 188" fill="none" stroke="#b59a67" stroke-width="1.6"/>
+      <use href="#leaf-shape" transform="translate(13 35) rotate(-22) scale(.8)"/>
+      <use href="#leaf-shape" transform="translate(-5 64) rotate(205) scale(.76)"/>
+      <use href="#leaf-shape" transform="translate(7 113) rotate(-18) scale(.8)"/>
+      <use href="#leaf-shape" transform="translate(1 148) rotate(205) scale(.72)"/>
+      <use href="#flower" transform="translate(5 91) scale(1.25)"/>
+      <use href="#rose" transform="translate(17 183) scale(1.08)"/>
+      <use href="#flower" transform="translate(4 40) scale(.98)"/>
+      <use href="#flower" transform="translate(10 151) scale(1.02)"/>
+    </g>
+    <g id="bouquet">
+      <path d="M-5 199C20 160 18 127 37 94S62 48 86 14M1 163C28 150 43 131 49 109M18 130C-1 117-6 101-1 84M39 92C63 80 76 60 78 39" fill="none" stroke="#b59a67" stroke-width="1.8"/>
+      <use href="#leaf-shape" transform="translate(5 162) rotate(-25) scale(.85)"/>
+      <use href="#leaf-shape" transform="translate(-5 114) rotate(205) scale(.76)"/>
+      <use href="#leaf-shape" transform="translate(27 125) rotate(-20) scale(.82)"/>
+      <use href="#leaf-shape" transform="translate(6 80) rotate(205) scale(.76)"/>
+      <use href="#leaf-shape" transform="translate(49 78) rotate(-18) scale(.76)"/>
+      <use href="#rose" transform="translate(2 133) scale(1.6)"/>
+      <use href="#flower" transform="translate(43 88) scale(1.72)"/>
+      <use href="#rose" transform="translate(81 28) scale(1.2)"/>
+      <use href="#flower" transform="translate(26 183) scale(1.24)"/>
+      <use href="#flower" transform="translate(66 143) scale(1.16)"/>
+      <use href="#rose" transform="translate(-4 59) scale(1)"/>
+      <use href="#flower" transform="translate(5 44) scale(.9)"/>
+      <g fill="#fffdf7" stroke="#c8a76d" stroke-width="1">
+        <circle cx="27" cy="49" r="3.4"/>
+        <circle cx="-2" cy="176" r="3.1"/>
+      </g>
+    </g>
+  </defs>
+  <g opacity=".99">
+    <use href="#bouquet" transform="scale(1.08)"/>
+    <use href="#bouquet" transform="translate(400 0) scale(-1.08 1.08)"/>
+    <use href="#bouquet" transform="translate(0 1400) scale(1.08 -1.08)"/>
+    <use href="#bouquet" transform="translate(400 1400) scale(-1.08 -1.08)"/>
+    <use href="#spray" transform="translate(0 332) scale(.78)"/>
+    <use href="#spray" transform="translate(0 586) scale(.78)"/>
+    <use href="#spray" transform="translate(400 332) scale(-.78 .78)"/>
+    <use href="#spray" transform="translate(400 586) scale(-.78 .78)"/>
+    <path d="M4 230C11 254 14 273 11 294M396 230C389 254 386 273 389 294M4 1090C11 1114 14 1133 11 1154M396 1090C389 1114 386 1133 389 1154" fill="none" stroke="#b59a67" stroke-opacity=".65" stroke-width="1.5"/>
+  </g>
+</svg>
